@@ -1,0 +1,16 @@
+[
+{
+  "modid": "crashlogadditions",
+  "name": "Crash Log Additions",
+  "description": "Allows pack makers to add addition information to crash logs.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Dyonovan"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
