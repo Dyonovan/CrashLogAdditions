@@ -14,7 +14,7 @@ buildscript {
         }
     }
     dependencies {
-        classpath 'net.minecraftforge.gradle:ForgeGradle:2.0-SNAPSHOT'
+        classpath 'net.minecraftforge.gradle:ForgeGradle:2.1-SNAPSHOT'
         classpath 'gradle.plugin.com.matthewprenger:CurseGradle:1.0.7'
     }
 }
@@ -30,13 +30,13 @@ if (file('APIToken').exists()) {
 
 version = "1.1"
 group= "com.dyonovan.crashlogadditions" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = "CrashLogAdditions-1.8"
+archivesBaseName = "CrashLogAdditions-1.8.9"
 
 minecraft {
-    version = "1.8-11.14.4.1563"
+    version = "1.8.9-11.15.1.1722"
     runDir = "eclipse"
 
-    mappings = "snapshot_20141130"
+    mappings = "stable_20"
 }
 
 dependencies {
@@ -81,6 +81,6 @@ curseforge {
         id = '247499'
         changelog = 'Added a notes section to crash report.'
         releaseType = 'release'
-        addGameVersion '1.8'
+        addGameVersion '1.8.9'
     }
 }
