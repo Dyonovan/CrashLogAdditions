@@ -13,7 +13,16 @@ buildscript {
 
 apply plugin: 'net.minecraftforge.gradle.forge'
 
-version = "1.0"
+plugins {
+    id 'com.matthewprenger.cursegradle' version '1.0.7'
+}
+
+String APIToken = ''
+if (file('APIToken').exists()) {
+    APIToken = new File('APIToken').text
+}
+
+version = "1.1"
 group= "com.dyonovan.crashlogadditions" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "CrashLogAdditions-1.10.2"
 
@@ -44,3 +53,13 @@ processResources
                 exclude 'mcmod.info'
             }
         }
+
+curseforge {
+    apiKey = APIToken
+    project {
+        id = '247499'
+        changelog = 'Added a notes section to crash report.'
+        releaseType = 'release'
+        addGameVersion '1.10.2'
+    }
+}

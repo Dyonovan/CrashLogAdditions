@@ -14,7 +14,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
  * @author Dyonovan
  * @since 7/14/2016
  */
-@Mod(name = "Crash Log Additions", modid = "crashlogadditions", version = "1.0", dependencies = "required-after:Forge@[12.18.1.2011,)")
+@Mod(name = "Crash Log Additions", modid = "crashlogadditions", version = "1.1", dependencies = "required-after:Forge@[12.18.1.2011,)")
 public class CrashLogAdditions {
 
     @EventHandler

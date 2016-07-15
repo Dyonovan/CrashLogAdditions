@@ -1,5 +1,6 @@
 package com.dyonovan.crashlogadditions;
 
+import jdk.nashorn.internal.runtime.regexp.joni.Config;
 import net.minecraftforge.fml.common.FMLCommonHandler;
 import net.minecraftforge.fml.common.ICrashCallable;
 
@@ -21,11 +22,19 @@ public class CLACrashCallable implements ICrashCallable {
 
     @Override
     public String getLabel() {
-        return ConfigHandler.modName;
+        return ConfigHandler.modName + " - " + ConfigHandler.modVersion;
     }
 
     @Override
     public String call() throws Exception {
-        return ConfigHandler.modVersion;
+
+        String notes = "\n";
+        String[] configNotes = ConfigHandler.modNotes;
+
+        for (int i = 0; i < configNotes.length; i++) {
+            notes += "\t\t\t" + configNotes[i] + "\n";
+        }
+
+        return notes;
     }
 }
