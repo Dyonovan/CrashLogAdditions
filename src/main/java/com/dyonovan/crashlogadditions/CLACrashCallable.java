@@ -1,8 +1,8 @@
 package com.dyonovan.crashlogadditions;
 
 
-import cpw.mods.fml.common.FMLCommonHandler;
-import cpw.mods.fml.common.ICrashCallable;
+import net.minecraftforge.fml.common.FMLCommonHandler;
+import net.minecraftforge.fml.common.ICrashCallable;
 
 /**
  * This file was created for Crash Log Additions
