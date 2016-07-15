@@ -30,13 +30,13 @@ if (file('APIToken').exists()) {
 
 version = "1.1"
 group= "com.dyonovan.crashlogadditions" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = "CrashLogAdditions-1.8.9"
+archivesBaseName = "CrashLogAdditions-1.9"
 
 minecraft {
-    version = "1.8.9-11.15.1.1722"
+    version = "1.9-12.16.1.1887"
     runDir = "eclipse"
 
-    mappings = "stable_20"
+    mappings = "snapshot_20160312"
 }
 
 dependencies {
@@ -81,6 +81,6 @@ curseforge {
         id = '247499'
         changelog = 'Added a notes section to crash report.'
         releaseType = 'release'
-        addGameVersion '1.8.9'
+        addGameVersion '1.9'
     }
 }
