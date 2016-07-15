@@ -1,5 +1,6 @@
 package com.dyonovan.crashlogadditions;
 
+
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.ICrashCallable;
 
@@ -21,11 +22,19 @@ public class CLACrashCallable implements ICrashCallable {
 
     @Override
     public String getLabel() {
-        return ConfigHandler.modName;
+        return ConfigHandler.modName + " - " + ConfigHandler.modVersion;
     }
 
     @Override
     public String call() throws Exception {
-        return ConfigHandler.modVersion;
+
+        String notes = "\n";
+        String[] configNotes = ConfigHandler.modNotes;
+
+        for (String configNote : configNotes) {
+            notes += "\t\t\t" + configNote + "\n";
+        }
+
+        return notes;
     }
 }

@@ -18,6 +18,7 @@ public class ConfigHandler {
 
     public static String modName;
     public static String modVersion;
+    public static String[] modNotes;
 
     public static void preInit(String path) {
 
@@ -27,6 +28,8 @@ public class ConfigHandler {
 
         modName = config.get("Mod Pack Name", "modPackName", "Mod Pack Name").getString();
         modVersion = config.get("Mod Pack Version", "modPackVersion", "Mod Pack Version").getString();
+        String[] string = {"Each Line", "Is A Seperate Line"};
+        modNotes = config.get("Mod Pack Notes", "modPackNotes", string).getStringList();
 
         config.save();
     }

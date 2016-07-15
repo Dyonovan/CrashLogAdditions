@@ -132,3 +132,8 @@ $RECYCLE.BIN/
 build
 eclipse
 !gradle-wrapper.jar
+CrashLogAdditions1710.iml
+CrashLogAdditions1710.ipr
+CrashLogAdditions1710.iws
+APIToken
+.gradle

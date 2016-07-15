@@ -1,5 +1,6 @@
 package com.dyonovan.crashlogadditions;
 
+
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
@@ -14,7 +15,7 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
  * @author Dyonovan
  * @since 7/14/2016
  */
-@Mod(name = "Crash Log Additions", modid = "crashlogadditions", version = "1.0", dependencies = "required-after:Forge@[10.13.4.1614,)")
+@Mod(name = "Crash Log Additions", modid = "crashlogadditions", version = "1.1", dependencies = "required-after:Forge@[10.13.4.1614,)")
 public class CrashLogAdditions {
 
     @EventHandler
