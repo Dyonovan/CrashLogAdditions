@@ -1,6 +1,5 @@
 package com.dyonovan.crashlogadditions;
 
-import jdk.nashorn.internal.runtime.regexp.joni.Config;
 import net.minecraftforge.fml.common.FMLCommonHandler;
 import net.minecraftforge.fml.common.ICrashCallable;
 
